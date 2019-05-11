@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.img-wrap .overlay {
+  background: linear-gradient(
+    to right,
+    rgb(15, 32, 39),
+    rgb(32, 58, 67),
+    rgb(44, 83, 100)
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in, background 0.9s ease-in;
+}
+
+.img-wrap {
+  position: relative;
+}
+
+.img-wrap:hover .overlay {
+  opacity: 0;
+}
